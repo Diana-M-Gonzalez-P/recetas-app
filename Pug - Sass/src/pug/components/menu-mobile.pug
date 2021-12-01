@@ -1,0 +1,9 @@
+<!-- Menu Mobile -->
+- var menus = [{ icon: './assets/svg/vegetarian.svg', name: 'Vegetarianos'}, { icon: './assets/svg/main.svg', name: 'Principales'}, { icon: './assets/svg/cake.svg', name: 'Tortas'},{ icon: './assets/svg/fast-food.svg', name: 'Rápida'} ,{ icon: './assets/svg/kids.svg', name: 'Menú Niños'} ,{ icon: './assets/svg/soup.svg', name: 'Sopas'}]
+
+section(class='menu-mobile')
+    each menu in menus ? menus : []
+        div 
+            img(src=menu.icon)
+            p=menu.name
+

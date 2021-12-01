@@ -1,0 +1,40 @@
+/**** General Styles *****/
+
+@font-face {
+  font-family: "MonsterClubhouse";
+  src: url(../assets/fonts/MonsterClubhouse.eot);
+  src: url(../assets/fonts/MonsterClubhouse.eot?#iefix)
+      format("embedded-opentype"),
+    url(../assets/fonts/MonsterClubhouse.otf) format("otf"),
+    url(../assets/fonts/MonsterClubhouse.svg#MonsterClubhouse) format("svg"),
+    url(../assets/fonts/MonsterClubhouse.ttf) format("truetype"),
+    url(../assets/fonts/MonsterClubhouse.woff) format("woff"),
+    url(../assets/fonts/MonsterClubhouse.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins.eot);
+  src: url(../assets/fonts/Poppins.eot?#iefix) format("embedded-opentype"),
+    url(../assets/fonts/Poppins.otf) format("otf"),
+    url(../assets/fonts/Poppins.svg#Poppins) format("svg"),
+    url(../assets/fonts/Poppins.ttf) format("truetype"),
+    url(../assets/fonts/Poppins.woff) format("woff"),
+    url(../assets/fonts/Poppins.woff2) format("woff2");
+}
+
+html {
+  body {
+    font-size: 16px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+:root {
+  --primary: #d84a4a;
+  --secondary: #425966;
+  --tertiary: #ffffff;
+}

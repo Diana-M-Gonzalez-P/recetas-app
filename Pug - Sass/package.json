@@ -1,0 +1,33 @@
+{
+  "name": "recetas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-refresh": "^1.1.0",
+    "gulp-sass": "^6.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "pug": "^2.0.4",
+    "sass": "^1.24.5",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "panini": "^1.6.3",
+    "tsify": "^4.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

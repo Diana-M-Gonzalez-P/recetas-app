@@ -1,0 +1,230 @@
+/**** Recipes Styles *****/
+
+.recipes {
+  margin: 1.75em 4.375em 10em 4.375em;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-bottom: 0;
+    margin-right: 1.875em;
+    margin-top: 2em;
+  }
+
+  @media (max-width: 767px) {
+    margin: 1.75em 1.375em 0 1.375em;
+  }
+
+  > h2 {
+    color: var(--primary);
+    font-family: "MonsterClubhouse";
+    font-size: 4.1875em;
+    font-weight: 100;
+    margin-bottom: 1em;
+    margin-top: 0;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 3.375em;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 16.875em;
+    justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 22em;
+      overflow-x: auto;
+      padding: 4rem 0;
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 19em;
+      overflow-x: auto;
+      padding: 4rem 0 2rem 0;
+    }
+
+    .recipes__dish {
+      align-items: center;
+      background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%)
+        0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      box-shadow: 0px 5px 9px #8395a766;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 16.875em;
+      width: 16.625em;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        flex: 1 0 auto;
+        margin-right: 1.5625em;
+      }
+
+      @media (max-width: 767px) {
+        flex: 1 0 auto;
+        height: 11.375em;
+        margin-right: 1.2625em;
+        width: 10.55em;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          height: initial;
+        }
+      }
+
+      &:hover {
+        height: initial;
+
+        .recipes__desc,
+        .recipes__punctuation {
+          display: none;
+        }
+
+        .recipes__info {
+          display: block;
+        }
+      }
+
+      .recipes__photo {
+        background-size: cover;
+        height: 9.875em;
+        margin-top: -55px;
+        width: 10.25em;
+
+        @media (max-width: 767px) {
+          width: 6.9375em;
+          height: 6.6875em;
+        }
+
+        &.ojingeo {
+          background-image: url(../assets/img/ojingeo.png);
+        }
+        &.cola {
+          background-image: url(../assets/img/cola.png);
+        }
+        &.roasted {
+          background-image: url(../assets/img/roasted.png);
+        }
+        &.sweet {
+          background-image: url(../assets/img/sweet.png);
+          height: 9.8125em;
+          width: 10em;
+
+          @media (max-width: 767px) {
+            width: 6.9375em;
+            height: 6.6875em;
+          }
+        }
+      }
+
+      .recipes__desc {
+        align-items: center;
+        display: flex;
+        flex: 1;
+
+        p {
+          @media (max-width: 767px) {
+            font-size: 1.25em;
+          }
+
+          color: var(--primary);
+          font-family: "Poppins";
+          font-size: 1.875em;
+
+          &.recipes__title {
+            font-family: "MonsterClubhouse";
+            margin-left: 8px;
+          }
+        }
+      }
+
+      .recipes__info {
+        display: none;
+        flex: 1;
+        margin-bottom: 1.25em;
+        margin-top: 10px;
+
+        div {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-bottom: 9px;
+
+          > img {
+            width: 17px;
+            height: 17px;
+          }
+
+          > span {
+            color: var(--primary);
+            font-family: "MonsterClubhouse";
+            font-size: 1.0625em;
+            margin-top: 5px;
+          }
+
+          > p {
+            color: var(--secondary);
+            font-family: "Poppins";
+            font-size: 0.9375em;
+          }
+
+          &.recipes__time {
+            > img {
+              height: 17px;
+              width: 23px;
+            }
+          }
+        }
+      }
+
+      .recipes__punctuation {
+        align-items: flex-end;
+        display: flex;
+        flex: 0.5;
+        justify-content: space-between;
+        padding: 0 1.1875em 1.3125em 0.6875em;
+        width: calc(100% - 0.6875em - 1.1875em - 1.3125em);
+
+        div {
+          display: flex;
+          align-items: flex-end;
+
+          img {
+            @media (max-width: 767px) {
+              width: 16px;
+            }
+          }
+
+          p {
+            color: var(--secondary);
+            font-family: "Poppins";
+            font-size: 1.625em;
+            letter-spacing: -0.52px;
+            line-height: 0.6;
+            padding-left: 12px;
+
+            @media (max-width: 767px) {
+              font-size: 1.0625em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

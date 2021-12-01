@@ -1,0 +1,87 @@
+/**** Sponsorship Styles *****/
+
+.sponsorship {
+  background: transparent linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 4px 6px 23px #a9a9a911;
+  height: 10.4375em;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 7.25em;
+  }
+
+  @media (min-width: 369px) and (max-width: 767px) {
+    height: 4.375em;
+  }
+
+  @media (max-width: 370px) {
+    height: 2.475em;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 3.375em 0 10.375em;
+    padding-bottom: 1.4375em;
+    position: relative;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin: 0 3.75em 0 3.0625em;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 0.25em 0 1.5em;
+    }
+
+    > h3 {
+      color: var(--secondary);
+      font-family: "MonsterClubhouse";
+      font-size: 3.5em;
+      font-weight: 100;
+      margin: 0;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 2.4375em;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 1.4375em;
+      }
+    }
+
+    .sponsorship__image {
+      bottom: 0;
+      height: 15.5em;
+      position: absolute;
+      right: 0;
+      width: 33.5em;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        bottom: -10px;
+        width: 23.6875em;
+        height: 11.7375em;
+      }
+
+      @media (min-width: 369px) and (max-width: 767px) {
+        bottom: 13px;
+        height: 6.625em;
+        width: 13.35em;
+      }
+
+      @media (max-width: 370px) {
+        bottom: 19px;
+        height: 3.825em;
+        width: 8.45em;
+      }
+
+      > div {
+        background-image: url("../assets/img/mark.png");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

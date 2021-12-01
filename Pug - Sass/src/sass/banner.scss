@@ -1,0 +1,67 @@
+/**** Banner Styles *****/
+
+.banner {
+  height: 26em;
+  position: relative;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 15.5625em;
+  }
+
+  @media (max-width: 767px) {
+    height: 14.625em;
+  }
+
+  &__image {
+    background-image: url("../assets/img/banner.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: 767px) {
+      background-position: center;
+    }
+  }
+
+  &__content {
+    margin-left: 16.313em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin-left: 7.5em;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: 3.5em;
+    }
+
+    .banner__title {
+      > h1 {
+        color: var(--tertiary);
+        font-family: "Poppins";
+        font-size: 4.625em;
+        font-weight: 100;
+        line-height: 0.5;
+        margin: 0;
+
+        @media (max-width: 767px) {
+          font-size: 3.1875em;
+        }
+      }
+
+      > h2 {
+        color: var(--tertiary);
+        font-family: "MonsterClubhouse";
+        font-size: 4.188em;
+        font-weight: 100;
+        margin: 0;
+
+        @media (max-width: 767px) {
+          font-size: 3.1875em;
+        }
+      }
+    }
+  }
+}

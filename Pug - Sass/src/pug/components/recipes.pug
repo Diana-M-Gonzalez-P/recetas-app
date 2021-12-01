@@ -1,0 +1,39 @@
+<!-- Recipes -->
+
+- var recipes = [{ image: 'ojingeo', title1: 'Ojingeo', title2:'Muchim', nummber:"5.0" },{ image: 'cola', title1: 'Cola', title2:'Chicken', nummber: "5.0" }, { image: 'roasted', title1: 'Roasted', title2:'Carrot', nummber: "4.5" } ,{ image: 'sweet', title1: 'Sweet', title2:'Cherries', nummber: "4.0" }]
+- var star = "./assets/svg/star.svg"
+- var favorite = "./assets/svg/favorite.svg"
+- var portion = "./assets/svg/portion.svg"
+- var time = "./assets/svg/time.svg"
+- var difficulty = "./assets/svg/difficulty.svg"
+
+section(class='recipes')
+    h2 Nuevas Recetas
+    div(class='recipes__content')
+        each recipe in recipes ? recipes : []
+            div(class='recipes__dish') 
+                div(class=`recipes__photo ${recipe.image}`) 
+                div(class='recipes__desc')
+                    p=recipe.title1
+                    p(class='recipes__title')=recipe.title2
+                div(class='recipes__info')
+                    div(class='recipes__portion')
+                        img(src=portion)
+                        span Tamaño de la porción
+                        p 4 raciones
+                    div(class='recipes__time') 
+                        img(src=time)
+                        span Tiempo de preparación
+                        p  10 minutos
+                    div(class='recipes__difficulty') 
+                        img(src=difficulty)
+                        span Dificultad
+                        p fácil
+                div(class='recipes__punctuation')  
+                    div(class='recipes__star') 
+                        img(src=star)
+                        p=recipe.nummber
+                    div
+                        img(src=favorite)
+
+
