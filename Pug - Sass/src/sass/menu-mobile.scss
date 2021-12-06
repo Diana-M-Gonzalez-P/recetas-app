@@ -16,6 +16,10 @@
     justify-content: center;
   }
 
+  @media (min-width: 500px) and (max-width: 700px) and (orientation: landscape) {
+    margin: -29px 8em 0 8em;
+  }
+
   > div {
     align-items: center;
     background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
@@ -38,10 +42,6 @@
       margin-bottom: 0.9375em;
       margin-right: 0.625em;
       width: calc(5.425em - 10px);
-
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
     }
 
     @media (min-width: 369px) and (max-width: 767px) and (orientation: landscape) {

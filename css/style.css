@@ -77,7 +77,28 @@
   src: url(../assets/fonts/Poppins.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/Poppins.otf) format("otf"), url(../assets/fonts/Poppins.svg#Poppins) format("svg"), url(../assets/fonts/Poppins.ttf) format("truetype"), url(../assets/fonts/Poppins.woff) format("woff"), url(../assets/fonts/Poppins.woff2) format("woff2");
 }
 html body {
+  background-color: #fafafa;
+  display: flex;
   font-size: 16px;
+  justify-content: center;
+  margin: 1.4375em 0;
+}
+@media (max-width: 1024px) {
+  html body {
+    margin: 0;
+  }
+}
+html body .container {
+  background-color: #ffffff;
+  border: 2px solid #f1f1f1;
+  padding-bottom: 2em;
+  width: 1280px;
+}
+@media (max-width: 1024px) {
+  html body .container {
+    width: 100%;
+    padding: 0;
+  }
 }
 html body p {
   margin: 0;
@@ -107,6 +128,11 @@ html body p {
     justify-content: center;
   }
 }
+@media (min-width: 500px) and (max-width: 700px) and (orientation: landscape) {
+  .menu-mobile {
+    margin: -29px 8em 0 8em;
+  }
+}
 .menu-mobile > div {
   align-items: center;
   background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0% 0% no-repeat padding-box;
@@ -128,9 +154,6 @@ html body p {
     margin-bottom: 0.9375em;
     margin-right: 0.625em;
     width: calc(5.425em - 10px);
-  }
-  .menu-mobile > div:nth-child(3n) {
-    margin-right: 0;
   }
 }
 @media (min-width: 369px) and (max-width: 767px) and (orientation: landscape) {
